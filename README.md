@@ -30,14 +30,11 @@ public class YourTask : ITask
 
     public async Task ExecuteAsync(ITaskExecutionContext? context, CancellationToken cancellationToken)
     {
-        try
-        {
+        try {
             // Your task implementation here
-
             OnSuccess?.Invoke();
         }
-        catch (Exception ex)
-        {
+        catch (Exception ex) {
             OnFailed?.Invoke(ex);
             throw;
         }
@@ -53,10 +50,16 @@ Add the following to your `.csproj` file:
 <Target Name="CreateSetupConf" AfterTargets="Build">
     <WriteLinesToFile
         File="$(OutputPath)setup.conf"
-        Lines="Name=NetAirflow.[YourTaskName].dll%0ADirectory=NetAirflow.[YourTaskName]"
+        Lines="Name=$(MSBuildProjectName).dll%0ADirectory=$(MSBuildProjectName)"
+        Overwrite="true" />
+    <ZipDirectory
+        SourceDirectory="$(OutputPath)"
+        DestinationFile="$(OutputPath)..\$(MSBuildProjectName).zip"
         Overwrite="true" />
 </Target>
 ```
+
+Note: You can use `$(MSBuildProjectName)` to reference your project name dynamically.
 
 ### 4. Event Handler Example
 
@@ -74,4 +77,7 @@ public YourTask()
 
 ## Deployment
 
-The task will be loaded by the manager in the directory specified in `setup.conf`.
+The task will be loaded by the manager in the directory specified in `setup.conf`. The build process automatically creates:
+
+1. A setup.conf file with project configuration
+2. A zip file containing all build outputs
