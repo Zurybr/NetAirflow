@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NetAirflow.Shared\NetAirflow.Shared.csproj" />
+	</ItemGroup>
+
+	<Target Name="CreateSetupConf" AfterTargets="Build">
+		<WriteLinesToFile
+			File="$(OutputPath)setup.conf"
+			Lines="Name=$(MSBuildProjectName).dll%0ADirectory=$(MSBuildProjectName)"
+			Overwrite="true" />
+		<ZipDirectory
+			SourceDirectory="$(OutputPath)"
+			DestinationFile="$(OutputPath)..\$(MSBuildProjectName).zip"
+			Overwrite="true" />
+	</Target>
+</Project>

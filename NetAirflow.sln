@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAirflow.Shared", "..\NetAirflow.Shared\NetAirflow.Shared.csproj", "{BD976B59-DEBF-4ACD-BEC0-CE6DEC3A3779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetAirflow.Web", "NetAirflow.Web\NetAirflow.Web.csproj", "{783CEA90-6BE2-4D07-A831-3D9F148EF339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAirflow.MyTaskLibrary", "..\NetAirflow.MyTaskLibrary\NetAirflow.MyTaskLibrary.csproj", "{443D55C1-B695-4968-8EF3-8DBFE80EBC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetAirflow.Shared", "NetAirflow.Shared\NetAirflow.Shared.csproj", "{695A93CB-7176-4307-BF33-B50A41DDCFC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAirflow.Web", "..\NetAirflow.Web\NetAirflow.Web.csproj", "{D417B3E1-2FEC-4BD2-8F26-AB8910C5DC2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetAirflow.MyTaskLibrary", "NetAirflow.MyTaskLibrary\NetAirflow.MyTaskLibrary.csproj", "{602E9E76-5FD9-4C48-B247-73599E5E0849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD976B59-DEBF-4ACD-BEC0-CE6DEC3A3779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD976B59-DEBF-4ACD-BEC0-CE6DEC3A3779}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD976B59-DEBF-4ACD-BEC0-CE6DEC3A3779}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD976B59-DEBF-4ACD-BEC0-CE6DEC3A3779}.Release|Any CPU.Build.0 = Release|Any CPU
-		{443D55C1-B695-4968-8EF3-8DBFE80EBC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{443D55C1-B695-4968-8EF3-8DBFE80EBC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{443D55C1-B695-4968-8EF3-8DBFE80EBC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{443D55C1-B695-4968-8EF3-8DBFE80EBC22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D417B3E1-2FEC-4BD2-8F26-AB8910C5DC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D417B3E1-2FEC-4BD2-8F26-AB8910C5DC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D417B3E1-2FEC-4BD2-8F26-AB8910C5DC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D417B3E1-2FEC-4BD2-8F26-AB8910C5DC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783CEA90-6BE2-4D07-A831-3D9F148EF339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783CEA90-6BE2-4D07-A831-3D9F148EF339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783CEA90-6BE2-4D07-A831-3D9F148EF339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783CEA90-6BE2-4D07-A831-3D9F148EF339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695A93CB-7176-4307-BF33-B50A41DDCFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695A93CB-7176-4307-BF33-B50A41DDCFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695A93CB-7176-4307-BF33-B50A41DDCFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695A93CB-7176-4307-BF33-B50A41DDCFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602E9E76-5FD9-4C48-B247-73599E5E0849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602E9E76-5FD9-4C48-B247-73599E5E0849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602E9E76-5FD9-4C48-B247-73599E5E0849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602E9E76-5FD9-4C48-B247-73599E5E0849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
